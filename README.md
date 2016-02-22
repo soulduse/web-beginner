@@ -27,7 +27,7 @@ WAS - 동적처리
     - 변수 선언의 경우는 최상단에 하는것이 좋다. 
 
 
-[Git 저장속 변경]
+[Git 저장소 변경]
 -------------------------
 - 해당 저장소는 2016-01-09일 이후 [new-study-link](https://github.com/web-developer-study/javascript)로 변경되어 진행.
 - 따라서 개인적 JavaScript Study 공간으로 활용할 예정
