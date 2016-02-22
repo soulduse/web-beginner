@@ -23,18 +23,20 @@ function makeDiamond(num){
 			end = end -1;
 		}
 	}
+
+	console.log(myArray);
 	
-	for(var i=0; i<myArray.length; i++){
-		resultStar = '';
-		for(var j=0; j<myArray[i].length; j++){
-			if(!myArray[i][j]){
-				resultStar += ' ';
-			}else{
-				resultStar += myArray[i][j];
-			}
-		}
-		console.log(resultStar);
-	}
+	// for(var i=0; i<myArray.length; i++){
+	// 	resultStar = '';
+	// 	for(var j=0; j<myArray[i].length; j++){
+	// 		if(!myArray[i][j]){
+	// 			resultStar += ' ';
+	// 		}else{
+	// 			resultStar += myArray[i][j];
+	// 		}
+	// 	}
+	// 	console.log(resultStar);
+	// }
 }
 
-makeDiamond(5);
+makeDiamond(3);

@@ -28,4 +28,6 @@ function sumLineNumer(number){
 	console.log(result);
 }
  
-sumLineNumer(12345);
+sumLineNumer(123);
+
+
