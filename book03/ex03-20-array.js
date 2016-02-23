@@ -38,3 +38,8 @@ console.log(arr.toString()); 로 출력시
 추가한 프로퍼티 값은 출력되지 않는다.
 또한, 배열의 length프로퍼티는 배열 원소의 가장 큰 인덱스가 변했을 경우만 변경 되는 것을 알 수 있다.
 */
+
+
+// 배열에 추가된 프로퍼티 값 출력
+console.log(arr.color);
+console.log(arr.name);
