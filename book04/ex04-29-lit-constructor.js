@@ -20,3 +20,23 @@ console.dir(bar);
 
 var baz = new Person('baz', 25, 'woman');
 console.dir(baz);
+
+
+
+// practice
+
+var data = {
+	name : '홍길동',
+	age : 24
+};
+
+console.log(data);
+
+function Piple(name, age){
+	this.name = name;
+	this.age = age;
+}
+
+
+var dataCon = new Piple('군자', 230);
+console.log(dataCon);
