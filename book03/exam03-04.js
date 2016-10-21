@@ -24,7 +24,11 @@ console.log(emptyVar === undefined);		// true
 var typeofEmpty = typeof emptyVar;
 console.log('typeofEmpty : '+typeofEmpty);
 console.log('emptyVar    : '+emptyVar);
-console.log(typeofEmpty === emptyVar);
+console.log('result      : '+(typeofEmpty === emptyVar));
 console.log(undefined === undefined);
 
-
+/*
+	자바스크립트에서는 null타입 변수인지를 확인할 때 
+	typeof연산자를 사용하면 안 되고, 일치 연산자(===)를
+	사용해서 변수의 값을 직접 확인 해야한다.
+*/
