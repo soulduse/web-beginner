@@ -6,5 +6,5 @@ var foo = {
 	gender	: 'male'
 };
 
-console.log(typeof foo);
-console.log(foo);
+console.log(typeof foo);	// object
+console.log(foo);			// { name: 'foo', age: 30, gender: 'male' }
