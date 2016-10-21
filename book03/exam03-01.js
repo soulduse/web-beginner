@@ -14,7 +14,7 @@ var floatNum 	= 0.1;
 
 // 문자열 타입
 var singleQuoteStr 	= 'single quote string';
-var doubleQuoteStr 	= 'double quote string';
+var doubleQuoteStr 	= "double quote string";
 var singleChar		= 'a';
 
 // 불린 타입
