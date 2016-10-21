@@ -1,21 +1,32 @@
-// 객체 리터럴을 통한 foo 객체 생성
+// 동일한 객체를 참조하는 두 변수 objA와 objB
 
 /*
-	자바스크립트에서는 객체의 프로퍼티를 delete연산자를 이용해 
-	즉시 삭제할 수 있다. 주의할 점은 delete 연산자는 객체의
-	프로퍼티를 삭제할 뿐, 객체 자체를 삭제하지는 못한다.
+	자바스크립트에서는 기본 타입인 숫자, 문자열, 불린값, null, undefined
+	5가지를 제외한 모든 값은 객체다.
+	배열, 함수 또한 객체로 취급된다.
+	이러한 객체는 자바스크립트에서 참조타입이라고 부른다.
+	: 객체의 모든 연산이 실제 값이 아닌 참조값으로 처리 되기 때문
 */
 
-var foo = {
-	name : 'foo',
-	nickname : 'babo'
+var objA = {
+	val : 40
 };
 
-console.log(foo);
-console.log(foo.nickname);
-delete foo.nickname;
-console.log(foo.nickname);
+var objB = objA;
 
-delete foo;
-console.log(foo.name);
-console.log(foo);
+console.log(objA.val);
+console.log(objB.val);
+
+objB.val = 50;
+
+console.log(objA.val);
+console.log(objB.val);
+
+
+/*
+	결과
+	40
+	40
+	50
+	50
+*/
