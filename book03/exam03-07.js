@@ -31,6 +31,13 @@ foo.computer = {
 	monitor : 'y',
 	hdd		: 'n'
 };
+
 console.log(foo);
 console.log(foo.computer);
 console.log(foo.computer.mouse);
+
+
+/* 	자바스크립트 객체의 프로퍼티 값을 할당할 때, 프로퍼티가 이미 있을 경우는
+	해당 프로퍼티의 값이 갱신되지만, 객체의 해당 프로퍼티가 없을 경우에는
+	새로운 프로퍼티가 동적으로 생성된 후 값이 할당된다.
+*/
