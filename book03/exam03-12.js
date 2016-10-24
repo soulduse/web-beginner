@@ -14,4 +14,10 @@ var foo = {
 foo.toString();
 
 console.log(foo);
-console.dir(foo)
+console.dir(foo);
+
+// 결과는 크롬 브라우저를 통해 확인해보자.
+
+/* 위의 코드와 같이 객체 리터럴 방식으로 생성된 객체의 경우 
+	Object.prototype 객체가 프로토타입 객체가 된다.
+*/
