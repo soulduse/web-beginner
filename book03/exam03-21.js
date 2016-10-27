@@ -18,3 +18,11 @@ console.dir(arr);
 
 
 // 배열의 length프로퍼티는 배열 원소의 가장 큰 인덱스가 변했을 때만 변경됨.
+
+for(var prop in arr){
+	console.log(prop, arr[prop]);
+}
+
+for(var i=0; i<arr.length; i++){
+	console.log(i, arr[i]);
+}
