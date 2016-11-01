@@ -10,6 +10,8 @@ var obj = {
 arr.push('baz');
 console.log(arr);
 
+Array.prototype.push.apply(obj, ['baz']);
+console.log(obj);
 // obj.push('baz');
 
 /*
