@@ -13,7 +13,7 @@ console.log(add4);	// (출력값) string2
 var obj = function(a,b){
 	var sum = a+b;
 	console.log(sum);
-	return sum;
+	return sum;			// return 값이 없을 경우 undefined 를 리턴함.
 };
 
 console.log(typeof obj);	// function
