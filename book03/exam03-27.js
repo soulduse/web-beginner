@@ -10,7 +10,17 @@
 
 // 숫자 메서드 호출
 var num = 0.5;
-console.log(num.toExponential(1));
+console.log(num.toExponential(1));	// 5.0e-1
 
 // 문자열 메서드 호출
-console.log("test".charAt(2));
+console.log("test".charAt(2));		// s
+
+/*
+	toExponential()
+	=> 숫자를 지수 형태의 문자열로 변환
+	(인자로 받는 값은 소수점 아래 몇 번째 자리까지 표시할 것인지 지정하는 것.)
+	
+	charAt()
+	=> 문자열에서 인자로 받은 위치에 있는 문자를 반환한다.
+	(문자열 인덱스는 0부터 시작)	
+*/
