@@ -11,4 +11,9 @@ console.log(!!undefined);	// false
 console.log(!!{});			// true
 console.log(!![1,2,3]);		// true
 
-console.log(null);
+
+/*
+	---------- 확인결과 ----------
+	false 를 가지는 경우는 5가지 이다.
+	0, '', false, null, undefined
+*/
