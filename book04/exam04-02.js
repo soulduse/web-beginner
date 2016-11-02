@@ -9,7 +9,7 @@
 
 // add() 함수 생성 (함수 표현식 방식)
 
-var sum = function(x, y){
+var add = function(x, y){
 	return x + y;
 };
 
@@ -23,11 +23,20 @@ var injection = function(x, y){
 	}
 	ddd();
 
-	return sum(x,m);
+	return add(x,m);
 };
 
-var plus = sum;
+var plus = add;
 
-console.log(sum(3,4));			// 7
+console.log(add(3,4));			// 7
 console.log(plus(10,4));		// 14
 console.log(injection(5,5));	// 30
+
+/*
+	add, injection 함수 모두 함수의 이름이 없는 익명함수 이다.
+	이름이 없는 익명함수를 만들고 이를 add, injection변수에 할당한 것.
+	이를 익명 함수를 이용한 함수 표현식 방법(익명 함수 표현식)이다.
+
+	이러한 익명 함수의 호출은 변수에 함수 호출 연산자인 ()를 붙여서 기술하는 것으로 가능하다.
+	이름이 포함된 함수 표현식을 기명 함수 표현식이라고 한다.
+*/
