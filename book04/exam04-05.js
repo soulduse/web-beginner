@@ -11,3 +11,8 @@
 
 var add = new Function('x', 'y', 'return x+y');
 console.log(add(3,4));
+
+/*
+	But, it is bed example.
+	because this method is often not used.
+*/
