@@ -22,5 +22,12 @@ var otherObject = {
 otherObject.sayName = myObject.sayName;
 
 // sayName() 메서드 호출
-myObject.sayName();
-otherObject.sayName();
+myObject.sayName();		// foo
+otherObject.sayName();	// bar
+
+/*
+	sayName() 메서드에서 사용된 this는 자신을 호출한 객체에 바인딩 된다.
+	따라서 myObject.sayName()의 this는 myObject의 name 값을,
+	otherObject.sayName()의 this는 otherObject의 name 값을
+	가지게 된다. 즉, this는 자신을 호출한 객체에 바인딩 된다.
+*/
