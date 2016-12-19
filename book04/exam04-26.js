@@ -32,3 +32,10 @@ var myObject = {
 	}
 };
 myObject.func1();		// func1() 메서드 호출
+
+/*
+	[실행 순서]
+	- 35 line >> func1() 메서드 호출
+	- 31 line >> func2() 내부함수 호출
+	- 28 line >> func3() 내부함수 호출
+*/
