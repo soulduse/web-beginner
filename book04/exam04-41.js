@@ -26,5 +26,8 @@ foo.sayHello();	// Hello
 	Line 14~16 : foo 객체의 프로토타입 객체인 Person.prototype 객체에
 	동적으로 sayHello() 메서드를 추가했다.
 
-	
+	Line 18 : foo 객체에서 sayHello() 메서드를 호출. 이때 foo 객체는 
+	sayHello() 메서드가 없지만, 프로토타입 체이닝으로 Perosn.prototype 객체에서
+	sayHello() 메서드를 검색한다. 그리고 sayHello() 메서드가 정의되어 있어서
+	Hello가 정상적으로 출력된다.
 */
