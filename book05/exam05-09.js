@@ -6,7 +6,6 @@ function HelloFunc(func){
 }
 
 HelloFunc.prototype.call = function(func){
-	console.log(func);
 	func ? func(this.greeting) : this.func(this.greeting);
 }
 
