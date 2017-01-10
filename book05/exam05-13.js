@@ -59,15 +59,6 @@ var bbb = aaa(1,2);
 
 setTimeout(bbb, 500)
 
-
-function aaa(a, b){
-	console.log(a+b);
-}
-
-var bbb = aaa(1,2);
-
-setTimeout(bbb, 500)
-
 /*
 	상위의 예제처럼 
 
