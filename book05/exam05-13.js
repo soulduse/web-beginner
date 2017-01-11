@@ -59,6 +59,14 @@ var bbb = aaa(1,2);
 
 setTimeout(bbb, 500)
 
+
+function ccc(a, b){
+	console.log(a+b);
+}
+
+var ddd = ccc(1,2);
+console.log(ddd);
+
 /*
 	상위의 예제처럼 
 
