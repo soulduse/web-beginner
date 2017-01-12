@@ -20,4 +20,4 @@ function create_object(o){
 var student = create_object(person);
 
 student.setName('me');
-console.log(student.getName());
+console.log(student.getName());ㅁ
