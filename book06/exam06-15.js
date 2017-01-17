@@ -1,3 +1,5 @@
+// subClass 함수와 모듈 패턴을 이용한 객체지향 프로그래밍
+
 function subClass(obj){
 	var parent = this === global ? Function : this;
 	var F = function(){};
@@ -38,41 +40,26 @@ function subClass(obj){
 	return child;
 }
 
+var person = function(arg){
+	var name = undefined;
 
-var person_obj = {
-	_init : function(){
-		console.log('person init');
-	},
+	return {
+		_init : function(arg){
+			name = arg ? arg : 'Dave';
+		},
+		getName : function(){
+			return name;
+		},
+		setName : function(arg){
+			name = arg;
+		}
+	};
+}
 
-	getName : function(){
-		return this.name;
-	},
-	setName : function(name){
-		this.name = name;
-	}
-};
+Person = subClass(person());
+var jinju = new Person('Jinju');
+console.log(jinju.getName());
 
-var student_obj = {
-	_init : function(){
-		console.log('student init');
-	},
-	getName : function(){
-		return 'Student Name : '+this.name;
-	}
-};
-
-var 
-
-
-
-var Person = subClass(person_obj);	// Person 클래스 정의
-var person = new Person();			// person init 출력
-person.setName('dave');
-console.log(person.getName());		// 출력값 : dave
-
-var Student = Person.subClass(student_obj);	// Student 클래스 정의
-var student = new Student()			// person init, student init 출력
-student.setName('Eva');
+Student = Person.subClass();
+var student = new Student('student');
 console.log(student.getName());
-
-// console.log(Person.toString());
