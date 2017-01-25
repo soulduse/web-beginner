@@ -110,3 +110,48 @@ console.log(factA(3));
 console.log(factB(20));
 
 */
+
+
+/* Memorization parttern
+
+	정의 : 계산 결과를 저장해 놓아 이후 다시 계산할 필요 없이
+			사용할 수 있게 한다.
+
+	기능 : 계산된 결과를 함수 프로퍼티 값으로 담아 놓고 나중에
+			사용한다.
+*/
+
+console.log('------- memoization parttern --------');
+
+function Calculate(key, input, func){
+	Calculate.data = Calculate.data || {};
+	console.log('Cal data ');
+	console.log(Calculate.data);
+
+	if(!Calculate.data[key]){
+		var result;
+		result = func(input);
+		Calculate.data[key] = result;
+	}
+
+	return Calculate.data[key];
+}
+
+var result = Calculate(1, 5, function(input){
+	return input * input;
+});
+
+console.log(result);
+
+
+result = Calculate(2, 5, function(input){
+	return input * input / 4;
+});
+
+console.log('----------- result ----------');
+console.log(result);
+
+console.log(Calculate(1));
+console.log(Calculate(2));
+// console.log(Calculate(3));
+console.log('-----------------------------');
