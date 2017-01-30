@@ -9,9 +9,8 @@ var cacher = function(cache, func){
 		}
 
 		return result;
-
-		return calculate;
 	};
+	return calculate;
 }
 
 var fact = cacher({'0':1}, function(func, n){

@@ -9,9 +9,9 @@ var cacher = function(cache, func){
 		}
 
 		return result;
-
-		return calculate;
 	};
+
+	return calculate;
 }
 
 /*
