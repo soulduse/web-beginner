@@ -8,7 +8,13 @@ function calculate(a, b, c){
 
 function curry(func){
 	var args = Array.prototype.slice.call(arguments, 1);
-
+	console.log(Array.prototype.slice.call(arguments, 1));
+	// Array.prototype.slice.call(a, b, c)
+	/*
+		a - 슬라이스할 아규먼트를 주입
+		b - 배열의 순서 입력 (어디서부터 시작할 것인지)
+		c - 어디까지 출력할 것인지 (옵션)
+	*/
 	return function(){
 		return func.apply(null, args.concat(Array.prototype.slice.call(arguments)));
 	}
